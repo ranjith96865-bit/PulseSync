@@ -1,7 +1,7 @@
 {
-  "name": "pulse-samjhorx-360",
+  "name": "pulsesync",
   "version": "1.0.0",
-  "description": "Unified Golden-Hour Emergency Response & SamjhoRx Multilingual Prescription Sentinel",
+  "description": "PulseSync: Unified Golden-Hour Emergency Response & Multilingual Prescription Sentinel",
   "scripts": {
     "dev": "vite",
     "web": "vite",

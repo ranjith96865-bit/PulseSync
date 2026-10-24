@@ -1,4 +1,4 @@
-# ⚡ PulseRx 360: Golden Hour Emergency Response & SamjhoRx Patient Audio Sentinel
+# ⚡ PulseSync: Golden Hour Emergency Response & Multilingual Prescription Sentinel
 
 > **A Real-World Solution for College Hackathons**  
 > Unifying Pre-Hospital Emergency Triage, Anti-Diversion Resource Routing, and Multilingual Vernacular Voice Patient Guidance.
@@ -18,22 +18,22 @@
 ### 3. Triage Paperwork Desks
 * **The Reality:** When a patient arrives, doctors have zero pre-arrival telemetry, forcing redundant triage registration and manual ESI scoring while the patient is actively deteriorating.
 
-### 4. The Post-Discharge Prescription Communication Gap (SamjhoRx)
+### 4. The Post-Discharge Prescription Communication Gap
 * **The Reality:** Over **50% of patients** mismanage their discharge medications due to illegible handwriting, Latin shorthand (`OD PC`, `TDS`, `BD`, `HS`), and language barriers.
 * **The Silent Killer:** Patients take over-the-counter (OTC) painkillers (e.g., Ibuprofen) alongside prescribed blood thinners (Aspirin/Clopidogrel), causing catastrophic internal bleeding and emergency relapse within 30 days.
 
 ---
 
-## 💡 The Solution: PulseRx 360
+## 💡 The Solution: PulseSync
 
-PulseRx 360 unites the entire emergency lifecycle across two core pillars:
+PulseSync unites the entire emergency lifecycle across two core pillars:
 
 ```
 [ In-Transit Ambulance (PulseSync) ] ──(Voice Triage / Vitals)──> [ Anti-Diversion Engine ]
                                                                         │
                      ┌──────────────────────────────────────────────────┴──────────────────────────────────────────────────┐
                      ▼                                                                                                     ▼
-          [ Hospital ED Command Hub ]                                                               [ SamjhoRx Patient Voice Guardian ]
+           [ Hospital ED Command Hub ]                                                               [ PulseSync Patient Voice Guardian ]
  - Pre-arrival Code STEMI alerts                                                             - Deciphers handwriting & Latin abbreviations
  - Auto-allocates Bed #ICU-02 & Cath Lab                                                     - Detects lethal drug-drug & diet conflicts
  - Bypasses ER registration desk                                                             - 🎧 Speaks directly to patient with voice audio
@@ -47,7 +47,7 @@ PulseRx 360 unites the entire emergency lifecycle across two core pillars:
 
 ## 🎧 Dedicated Patient Voice Explainer (8 Languages)
 
-SamjhoRx speaks directly to the patient in their native tongue with clinical clarity:
+PulseSync speaks directly to the patient in their native tongue with clinical clarity:
 
 1. **ಕನ್ನಡ (Kannada)** — Native Kannada audio instructions explaining cardiac safety & warning against conflicting painkillers.
 2. **हिन्दी (Hindi)** — North Indian vernacular explanation for meal timings and safety warnings.
