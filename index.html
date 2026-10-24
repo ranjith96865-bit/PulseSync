@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PulseSync | Golden Hour Emergency Network &amp; Prescription Sentinel</title>
+  <meta name="description" content="PulseSync: Prescription handwriting deciphering with Kannada &amp; multilingual audio voice, live ambulance ETA routing, hospital bed telemetry, and Golden Hour emergency pre-arrival triage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Noto+Sans+Tamil:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Demo Banner -->
+    <div class="demo" role="note">
+      <span><b>DEMO BUILD</b> Ambulance, doctor, and hospital figures are simulated. Prescription Sentinel uses client-side AI &amp; Web Speech.</span>
+      <span>Real emergency? Call <b>108</b> or <b>112</b>.</span>
+    </div>
+
+    <!-- Top Header -->
+    <header class="top">
+      <h1>Pulse<span>Sync</span></h1>
+      <p>Understand your prescription. Find the right help fast.</p>
+    </header>
+
+    <!-- Colored Accent Strip -->
+    <div class="strip" aria-hidden="true"></div>
+
+    <!-- Navigation Tabs (5 Tabs matching SamjhoRx.html with Prescription Sentinel as Tab 1) -->
+    <nav class="tabs" role="tablist" aria-label="Sections" id="tabs">
+      <button role="tab" data-tab="card" aria-selected="true">Prescription Sentinel</button>
+      <button role="tab" data-tab="ambulance" aria-selected="false">Ambulances</button>
+      <button role="tab" data-tab="doctors" aria-selected="false">Doctors nearby</button>
+      <button role="tab" data-tab="hospitals" aria-selected="false">Hospital capacity</button>
+      <button role="tab" data-tab="golden" aria-selected="false" class="emerg">Golden hour</button>
+    </nav>
+
+    <!-- Dynamic Main Content View -->
+    <main id="view" data-tab="card" aria-live="polite"></main>
+
+    <!-- Footer -->
+    <footer>
+      PulseSync explains what is written on your prescription and organizes your daily medicine schedule. It does not replace your doctor or pharmacist. Check every medicine name and dose against the original prescription before taking it. The emergency map is a schematic around a demo urban grid, not a real street map.
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" hidden></div>
+
+  <!-- Camera Snapshot Modal -->
+  <div id="cameraModal" class="camera-modal" style="display:none;">
+    <div class="camera-modal-content">
+      <div class="camera-modal-header">
+        <h3 style="margin:0;font-size:18px;font-family:var(--f-display);">📷 Capture Prescription Photo</h3>
+        <button id="btnCloseCamera" class="btn sm" style="font-size:18px;line-height:1;border:none;background:none;padding:4px 8px;cursor:pointer;" aria-label="Close camera">✕</button>
+      </div>
+      <div class="camera-modal-body">
+        <video id="cameraVideo" class="camera-video" playsinline autoplay muted></video>
+        <canvas id="cameraCanvas" style="display:none;"></canvas>
+        <div class="camera-reticle">
+          <span>Align doctor prescription slip within box</span>
+        </div>
+      </div>
+      <div class="camera-modal-footer">
+        <button id="btnCameraFallbackTrigger" class="btn sm">📁 Pick Photo File</button>
+        <button id="btnCaptureShutter" class="btn primary">📸 Snap &amp; Read</button>
+        <input type="file" id="cameraFallbackFileInput" accept="image/*" style="display:none;" />
+      </div>
+    </div>
+  </div>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
